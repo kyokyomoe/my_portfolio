@@ -1,0 +1,104 @@
+import React from "react";
+
+export default function Hero() {
+  return (
+    <section
+      id="home"
+      className="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-blue-50/50 to-white"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Left text column */}
+        <div className="space-y-6">
+          <div className="inline-flex items-center space-x-2 bg-emerald-100/70 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Fifth-Year IT Student</span>
+          </div>
+
+          <div className="space-y-2">
+            <h2 className="text-xl text-gray-600 font-medium">Hello, I'm</h2>
+            <h1 className="text-4xl sm:text-6xl font-extrabold text-gray-900 tracking-tight">
+              Ma Kyo Kyo Moe
+            </h1>
+            <p className="text-blue-600 font-semibold text-lg tracking-wide">
+              IT Student &bull; Developer &bull; Lifelong Learner
+            </p>
+          </div>
+
+          <p className="text-gray-600 text-base sm:text-lg max-w-lg leading-relaxed">
+            I'm a fifth-year Information Technology student with interests in
+            software development, networking, and business technology solutions.
+          </p>
+
+          <div className="flex flex-wrap gap-4 pt-2">
+            <a
+              href="#skills"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-xl shadow-lg shadow-blue-600/20 transition flex items-center space-x-2"
+            >
+              <span>View My Projects</span>
+              <span>→</span>
+            </a>
+                <a 
+        href="/cv_form.pdf" 
+        download="Ma_Kyo_Kyo_Moe_CV.pdf"
+        className="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 font-medium px-6 py-3 rounded-xl transition flex items-center space-x-2"
+        >
+        <span>⬇ Download CV</span>
+        </a>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex items-center space-x-4 pt-4 text-gray-600">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              className="p-2.5 bg-white border border-gray-200 rounded-full hover:text-blue-600 shadow-sm transition"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="p-2.5 bg-white border border-gray-200 rounded-full hover:text-blue-600 shadow-sm transition"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:candykyo54@gmail.com"
+              className="p-2.5 bg-white border border-gray-200 rounded-full hover:text-blue-600 shadow-sm transition"
+            >
+              Email
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noreferrer"
+              className="p-2.5 bg-white border border-gray-200 rounded-full hover:text-blue-600 shadow-sm transition"
+            >
+              YouTube
+            </a>
+          </div>
+        </div>
+
+        {/* Right image column */}
+        <div className="relative flex justify-center">
+          <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-blue-200 to-blue-400 p-2 shadow-2xl flex items-center justify-center overflow-hidden">
+            <div className="w-full h-full bg-blue-50 rounded-full overflow-hidden flex items-end justify-center">
+              {/* Replace with your image asset path */}
+              <img
+                src="/myImage.jpeg"
+                alt="Ma Kyo Kyo Moe"
+                className="w-full h-full object-cover object-top"
+                onError={(e) => {
+                  e.target.src =
+                    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"; // fallback placeholder
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
