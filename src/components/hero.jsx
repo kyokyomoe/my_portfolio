@@ -26,7 +26,7 @@ export default function Hero() {
 
           <p className="text-gray-600 text-base sm:text-lg max-w-lg leading-relaxed">
             I'm a fifth-year Information Technology student with interests in
-            software development, networking, and business technology solutions.
+            software development , business technology solutions and software project management .
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2">
@@ -49,7 +49,7 @@ export default function Hero() {
           {/* Social Icons */}
           <div className="flex items-center space-x-4 pt-4 text-gray-600">
             <a
-              href="https://github.com"
+              href="https://github.com/kyokyomoe"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 bg-white border border-gray-200 rounded-full hover:text-blue-600 shadow-sm transition"
@@ -57,7 +57,7 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/candy-kyo/"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 bg-white border border-gray-200 rounded-full hover:text-blue-600 shadow-sm transition"
@@ -70,14 +70,12 @@ export default function Hero() {
             >
               Email
             </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 bg-white border border-gray-200 rounded-full hover:text-blue-600 shadow-sm transition"
-            >
-              YouTube
-            </a>
+              <a
+            href="https://tel:09793323995"
+            className="p-2.5 bg-white border border-gray-200 rounded-full hover:text-blue-600 shadow-sm transition flex items-center justify-center"
+          >
+            Phone
+          </a>
           </div>
         </div>
 

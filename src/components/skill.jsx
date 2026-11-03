@@ -1,14 +1,15 @@
 import React from "react";
 
+
 const skillsList = [
   { name: "React", type: "Frontend", icon: "⚛" },
   { name: "Angular", type: "Frontend", icon: "🅰" },
-  { name: "Flutter", type: "Mobile", icon: "💙" },
   { name: "PHP", type: "Backend", icon: "🐘" },
-  { name: "Java", type: "Backend", icon: "☕" },
-  { name: "C++", type: "Programming", icon: "⚙" },
   { name: "Laravel", type: "Framework", icon: "🔴" },
+  { name: "Git and Github", type: "Tool", icon: "🛠" },
+  { name: "Microsoft Office", type: "Tool", icon: "🪟" }, // Windows/Microsoft Icon
 ];
+
 
 export default function Skills() {
   return (

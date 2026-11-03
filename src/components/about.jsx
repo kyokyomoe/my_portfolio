@@ -8,9 +8,9 @@ export default function About() {
           {/* Laptop Artwork Card */}
           <div className="bg-gray-50 border border-gray-100 rounded-3xl p-6 shadow-sm flex flex-col items-center justify-center h-full">
             <div className="w-full bg-gray-200 rounded-2xl h-48 flex items-center justify-center overflow-hidden relative shadow-inner">
-              <span className="text-gray-500 font-mono text-xl">
-                &lt;/&gt; Laptop setup mockup
-              </span>
+             
+               <img src="/computer.png" alt="Laptop Artwork" className="w-full h-full object-cover" />
+              
             </div>
           </div>
 
