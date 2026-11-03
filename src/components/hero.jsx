@@ -1,4 +1,6 @@
 import React from "react";
+import myImage from "../assets/myImage.jpeg";
+import cvform from "../assets/cv_form.pdf";
 
 export default function Hero() {
   return (
@@ -38,7 +40,7 @@ export default function Hero() {
               <span>→</span>
             </a>
                 <a 
-        href="/cv_form.pdf" 
+        href={cvform} 
         download="Ma_Kyo_Kyo_Moe_CV.pdf"
         className="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 font-medium px-6 py-3 rounded-xl transition flex items-center space-x-2"
         >
@@ -85,13 +87,10 @@ export default function Hero() {
             <div className="w-full h-full bg-blue-50 rounded-full overflow-hidden flex items-end justify-center">
               {/* Replace with your image asset path */}
               <img
-                src="/myImage.jpeg"
+                src={myImage}
                 alt="Ma Kyo Kyo Moe"
                 className="w-full h-full object-cover object-top"
-                onError={(e) => {
-                  e.target.src =
-                    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"; // fallback placeholder
-                }}
+                
               />
             </div>
           </div>
